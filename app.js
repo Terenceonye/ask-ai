@@ -13,7 +13,7 @@ app.use(cors());
 const HUGGING_FACE_API_KEY = process.env.HUGGING_FACE_API_KEY;
 
 // Hugging Face model endpoint
-const MODEL_ENDPOINT = "https://api-inference.huggingface.co/models/bert-large-uncased-whole-word-masking-finetuned-squad";
+const MODEL_ENDPOINT = process.env.MODEL_ENDPOINT;
 
 // Load context from context.txt at server startup
 let context;
